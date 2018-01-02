@@ -22,4 +22,4 @@ To learn more about Universal Dashboard, visit [PoshUd.com](https://www.poshud.c
 ```
 
 
-![Image of collections](/images/collection.png)
+![Image of collections](/images/collection.PNG)
