@@ -21,7 +21,7 @@ New-Item -Path $OutputPath -ItemType Directory
 
 Copy-Item "$BuildFolder\UniversalDashboard.$ModuleName.psm1" $OutputPath
 
-$Version = "0.1.0"
+$Version = "0.1.1"
 
 $manifestParameters = @{
 	Path = "$OutputPath\UniversalDashboard.$ModuleName.psd1"
@@ -35,7 +35,7 @@ $manifestParameters = @{
 	ReleaseNotes = "Initial release"
 	LicenseUri = "https://github.com/ironmansoftware/ud-material-design/blob/master/LICENSE"
 	ProjectUri = "https://github.com/ironmansoftware/ud-material-design"
-	FunctionsToExport = @("New-UDCollection", "New-UDCollectionItem")
+	FunctionsToExport = @("New-UDCollection", "New-UDCollectionItem", "New-UDChip")
     CmdletsToExport = @()
     RequiredModules = @("UniversalDashboard")
 }

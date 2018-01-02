@@ -31,6 +31,38 @@ function New-UDCollectionItem {
             className = $className
         } -Content $Content
     }
+}
 
+function New-UDChip {
+    param(
+       $Image,
+       $Text,
+       [Switch]$CloseButton,
+       $Margin = 20
+    )
 
+    $Content = @()
+
+    if ($Image -ne $null) {
+        $Content += New-UDElement -Tag "img" -Attributes @{
+            src = $Image
+        }
+    }
+
+    $Content += $Text
+
+    if ($CloseButton) {
+        $Content += New-UDElement -Tag "i" -Attributes @{
+            className = "close fa fa-times"
+        }
+    }
+
+    New-UDElement -Tag "div" -Attributes @{
+        className = "chip"
+        style = @{
+            margin = "$($Margin)px"
+        }
+    } -Content {
+        $Content
+    }
 }

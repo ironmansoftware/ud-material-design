@@ -10,6 +10,14 @@ To learn more about Universal Dashboard, visit [PoshUd.com](https://www.poshud.c
 
 ## Material Design Components 
 
+### Chips
+
+```
+New-UDChip -Text "Adam" -CloseButton -Image "http://materializecss.com/images/yuna.jpg"
+```
+
+![Image of collections](/images/chip.png)
+
 ### Collections 
 
 ```
@@ -20,6 +28,5 @@ To learn more about Universal Dashboard, visit [PoshUd.com](https://www.poshud.c
     New-UDCollectionItem -Content { "GitHub" } -Url "http://www.github.com"
 }
 ```
-
 
 ![Image of collections](/images/collection.PNG)
