@@ -7,7 +7,7 @@ if ($Env:APPVEYOR) {
 }
 
 
-$OutputPath = "$BuildFolder\output\UniversalDashboard.$MaterialDesign"
+$OutputPath = "$BuildFolder\output\UniversalDashboard.$ModuleName"
 
 $powerShellGet = Import-Module PowerShellGet  -PassThru -ErrorAction Ignore
 
