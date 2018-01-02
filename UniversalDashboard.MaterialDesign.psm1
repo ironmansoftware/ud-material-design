@@ -20,8 +20,17 @@ function New-UDCollectionItem {
         $className += " active"
     }
 
-    New-UDElement -Tag "li" -Attributes @{
-        href = $Url
-        className = "collection-item"
-    } -Content $Content
+    if ($Url -ne $null) {
+        New-UDElement -Tag "a" -Attributes @{
+            href = $Url
+            className = $className
+        } -Content $Content
+    } else {
+        New-UDElement -Tag "li" -Attributes @{
+            href = $Url
+            className = $className
+        } -Content $Content
+    }
+
+
 }
