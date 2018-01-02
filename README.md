@@ -30,3 +30,12 @@ New-UDChip -Text "Adam" -CloseButton -Image "http://materializecss.com/images/yu
 ```
 
 ![Image of collections](/images/collection.PNG)
+
+### Preloader
+
+```
+New-UDPreloader 
+New-UDPreloader -PercentComplete 70
+```
+
+![Image of collections](/images/preloader.gif)
